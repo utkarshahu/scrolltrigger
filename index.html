@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolltrigger</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<main class="relative flex flex-col items-center text-white text-center w-full gap-4 py-[15vh]">
+    <!-- Card 1 - Will appear below the other cards initially -->
+    <div class="card card1 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/1.png" class="w-[180px] aspect-square" alt="img1">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Dodecahedron</span>
+        </h1>
+        <p>Geometric shapes are fundamental to mathematics and are used in various fields, from architecture to computer graphics.</p>
+    </div>
+    
+    <!-- Card 2 - Covers Card 1 when scrolled -->
+    <div class="card card2 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/2.png" class="w-[180px] aspect-square" alt="img2">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Geometric Shape</span>
+        </h1>
+        <p>This image depicts a cylinder, a three-dimensional geometric shape with two circular bases and a curved side.</p>
+    </div>
+    
+    <!-- Card 3 - Covers Card 2 when scrolled -->
+    <div class="card card3 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/3.png" class="w-[180px] aspect-square" alt="img3">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Golden Dodecahedron</span>
+        </h1>
+        <p>This geometric form has been studied and admired for centuries due to its mathematical elegance and aesthetic appeal.</p>
+    </div>
+    <!-- Card 4 - Covers Card 2 when scrolled -->
+    <div class="card card4 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/4.png" class="w-[180px] aspect-square" alt="img3">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Golden Segment</span>
+        </h1>
+        <p>This image displays a golden geometric shape, a testament to the beauty and complexity of mathematics. </p>
+    </div>
+    <!-- Card 5 - Covers Card 2 when scrolled -->
+    <div class="card card5 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/5.png" class="w-[180px] aspect-square" alt="img3">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Polyhedral Marvel</span>
+        </h1>
+        <p>It appears in various fields, including architecture, design, and even nature.</p>
+    </div>
+    <!-- Card 6 - Covers Card 2 when scrolled -->
+    <div class="card card6 flex flex-col items-center bg-[#2e251e] sticky top-[15vh] w-[27vw] py-[15vh] px-[20px] rounded-[25px] ">
+        <img src="img/6.png" class="w-[180px] aspect-square" alt="img3">
+        <h1 class="text-4xl font-thin">
+            THE <br>
+            <span class="font-bold">Golden Object</span>
+        </h1>
+        <p>This image showcases a metallic form, a three-dimensional object with a smooth, reflective surface.</p>
+    </div>
+</main>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
